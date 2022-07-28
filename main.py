@@ -2,7 +2,6 @@ import tkinter
 from tkinter import *
 import fnmatch
 import os
-
 from pygame import mixer
 
 window = tkinter.Tk()
@@ -11,7 +10,6 @@ window.title("music")
 icon = PhotoImage(file='music.png')
 window.config(background="#737CA1")
 window.iconphoto(True, icon)
-
 
 rootpath = "C:\\Users\LENOVO\Music"
 pattern = "*.mp3"
@@ -23,7 +21,6 @@ stop_img = tkinter.PhotoImage(file="stop_img.png")
 play_img = tkinter.PhotoImage(file="play_img.png")
 pause_img = tkinter.PhotoImage(file="pause_img.png")
 next_img = tkinter.PhotoImage(file="next_img.png")
-
 
 
 def play():
@@ -47,6 +44,7 @@ def pause():
         mixer.music.unpause()
         pauseButton["text"] = "pause"
         pauseButton["bg"] = "red"
+
 def next():
     nextsng = playlist.curselection()
     nextsng =nextsng[0] + 1
@@ -81,6 +79,7 @@ playlist.pack(padx=15,pady=15)
 
 label = tkinter.Label(window, text = '',bg='#737CA1', fg="white", font=('arial', 15))
 label.pack(pady = 15)
+
 
 top = tkinter.Frame(window, bg='#737CA1')
 top.pack(padx=10, pady=5, anchor='center')
