@@ -74,10 +74,7 @@ def previous():
     playlist.select_set(prevsng)
 
 
-
-
-
-#for create lit of
+#for create list of
 playlist = Listbox(window, selectmode=SINGLE, bg='#737CA1', fg="white", font=('arial', 15), width=100, selectbackground="DodgerBlue2")
 playlist.pack(padx=15,pady=15)
 
