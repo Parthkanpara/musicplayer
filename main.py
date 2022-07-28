@@ -14,7 +14,9 @@ window.iconphoto(True, icon)
 rootpath = "C:\\Users\LENOVO\Music"
 pattern = "*.mp3"
 
+
 mixer.init()
+
 
 prew_img = tkinter.PhotoImage(file="prev_img.png")
 stop_img = tkinter.PhotoImage(file="stop_img.png")
